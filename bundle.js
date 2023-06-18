@@ -165,7 +165,7 @@ function resizeCarousels() {
         const slider = getCarouselSlider(carousel);
         const controlPrev = getCarouselControlPrev(carousel);
         const controlNext = getCarouselControlNext(carousel);
-        const itemCount = isLg() ? 7 : isMd() ? 5 : isSm() ? 4 : 3;
+        const itemCount = getCarouselContent();
         const sliderWidth = slider.getBoundingClientRect().width;
         const controlPrevWidth = controlPrev.getBoundingClientRect().width;
         const controlNextWidth = controlNext.getBoundingClientRect().width;
