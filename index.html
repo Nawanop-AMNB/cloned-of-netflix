@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Cloned Netflix</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </header>
+  <body>
+    <div class="header-section">
+      <div class="header-section-content">
+        <div class="logo"></div>
+        <nav>
+          <ol class="nav">
+            <li>หน้าหลัก</li>
+            <li>รายการทีวี</li>
+            <li>ภาพยนต์</li>
+            <li>มาใหม่และกำลังฮิต</li>
+            <li>รายการของฉัน</li>
+            <li>เลือกดูตามภาษา</li>
+          </ol>
+        </nav>
+        <div class="user-action-container">
+          <button class="btn"><i class="fas fa-search"></i></button>
+          <button class="btn"><i class="fa-regular fa-bell"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="movie-trailer-section">
+      <div class="overview">
+        <div>
+          <img src="/assets/movie-trailer-movie-name-image.webp" width="100%" />
+          <div class="movie-trailer-watchnow-title">
+            รายการทีวีอันดับหนึ่งวันนี้
+          </div>
+          <div class="movie-trailer-watchnow-overall">
+            สองหนุ่มนักชกผนึกกำลังกับเถ้าแก่ปล่อยเงินกู้ใจบุญ
+            เพื่อโค่นล้มเจ้าหนี้นอกระบบใจเหี้ยมที่จ้องขูดเลือดขูดเนื้อเหยื่อที่สิ้นไร้ไม้ตอก
+          </div>
+          <div class="movie-trailer-watchnow-actions">
+            <button class="movie-trailer-watchnow-button play-button">
+              <i class="fa-solid fa-play play-icon"></i>เล่น
+            </button>
+            <button class="movie-trailer-watchnow-button info-button">
+              <i class="fa-solid fa-circle-info info-icon"></i>ข้อมูลเพิ่มเติม
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-10 overlap">
+      <div class="carousel-title">รายการทีวี 10 อันดับสูงสุดในไทยวันนี้</div>
+      <div class="carousel" onscroll="onScrollCarousel()">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-1-number.svg" />
+                <img src="/assets/movie-top-1-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-2-number.svg" />
+                <img src="/assets/movie-top-2-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-3-number.svg" />
+                <img src="/assets/movie-top-3-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-4-number.svg" />
+                <img src="/assets/movie-top-4-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-5-number.svg" />
+                <img src="/assets/movie-top-5-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-6-number.svg" />
+                <img src="/assets/movie-top-6-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-7-number.svg" />
+                <img src="/assets/movie-top-7-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-8-number.svg" />
+                <img src="/assets/movie-top-8-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-9-number.svg" />
+                <img src="/assets/movie-top-9-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-10-number.svg" />
+                <img src="/assets/movie-top-10-image.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-10 section">
+      <div class="carousel-title">รายการภาพยนต์ 10 อันดับสูงสุดในไทยวันนี้</div>
+      <div class="carousel" onscroll="onScrollCarousel()">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-1-number.svg" />
+                <img src="/assets/movie-top-3-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-2-number.svg" />
+                <img src="/assets/movie-top-4-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-3-number.svg" />
+                <img src="/assets/movie-top-8-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-4-number.svg" />
+                <img src="/assets/movie-top-9-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-5-number.svg" />
+                <img src="/assets/movie-top-1-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-6-number.svg" />
+                <img src="/assets/movie-top-2-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-7-number.svg" />
+                <img src="/assets/movie-top-5-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-8-number.svg" />
+                <img src="/assets/movie-top-6-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-9-number.svg" />
+                <img src="/assets/movie-top-7-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="top-10-item">
+                <img src="/assets/movie-top-10-number.svg" />
+                <img src="/assets/movie-top-10-image.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="carousel-title">กำลังฮิต</div>
+      <div class="carousel">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-1-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-2-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-3-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-4-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-5-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-6-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-7-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-8-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-9-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-10-image.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="carousel-title">เนื่องจากคุณดู [เกิดใหม่เป็นลูกโอชิ]</div>
+      <div class="carousel">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-11-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-12-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-13-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-14-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-15-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-1-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-2-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-3-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-4-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-5-image.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="carousel-title">ภาพยนต์แอ็คชั่นผจญภัย</div>
+      <div class="carousel">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-6-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-7-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-8-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-9-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-10-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-11-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-12-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-13-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-14-image.webp" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-15-image.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="carousel-title">รายการของฉัน</div>
+      <div class="carousel">
+        <div class="carousel-control carousel-control-prev"></div>
+        <div class="carousel-control carousel-control-next"></div>
+        <div class="carousel-slider">
+          <div class="carousel-content">
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-7-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-8-image.jpeg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media">
+                <img src="/assets/movie-media-9-image.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/bundle.js"></script>
+</html>

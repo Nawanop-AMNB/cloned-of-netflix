@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --text-primary-emphasize: white;
+  --text-primary: #e5e5e5;
+  --text-secondary: black;
+  --button-primary-emphasize: white;
+  --button-primary: #e5e5e5;
+  --button-secondary: rgba(109, 109, 110, 0.7);
+  --font-bold: 600;
+  --font-h1: min(32px, 1.5vw);
+  --font-h2: min(28px, 1.3vw);
+  --font-h3: min(24px, 1.15vw);
+  --font-h4: min(20px, 1.05vw);
+  --font-h5: min(16px, 0.975vw);
+  --font-content: min(14px, 0.9vw);
+  --nav-height: 68px;
+  --font-family: "Prompt";
+}
+
+i {
+  color: white;
+  font-size: max(var(--font-h4), 18px);
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  color: var(--text-primary);
+  background: black;
+  font-family: var(--font-family);
+  font-size: var(--font-content);
+}
+
+button {
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
+  border: none;
+}
+
+.header-section {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4990371148459384) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: background-color 0.7s ease;
+}
+
+.header-section.sticky {
+  background-color: black;
+}
+
+.header-section .header-section-content {
+  padding-left: 48px;
+  padding-right: 48px;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+}
+
+.header-section .header-section-content div[class="logo"] {
+  background-image: url(/assets/netflix-nav-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 68px;
+  margin-right: 24px;
+}
+
+.header-section .header-section-content div[class="user-action-container"] {
+  justify-self: right;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: var(--nav-height);
+}
+
+nav ol[class="nav"] li {
+  margin-left: 20px;
+  font-size: var(--font-h5);
+}
+
+nav ol[class="nav"] li[class="active"] {
+  font-weight: var(--font-bold);
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.user-action-container {
+  display: flex;
+  column-gap: 12px;
+}
+
+.movie-trailer-section {
+  height: 0;
+  padding-bottom: 56.25%;
+  background-image: url(/assets/move-trailer-image.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: calc(0px - var(--nav-height));
+}
+
+.movie-trailer-section .overview {
+  display: grid;
+  grid-template-columns: 35% auto;
+  padding-top: var(--nav-height);
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.movie-trailer-section .overview div .movie-trailer-watchnow-title {
+  margin-top: 12px;
+  font-weight: var(--font-bold);
+  font-size: min(32px, 1.5vw);
+}
+
+.movie-trailer-section .overview .movie-trailer-watchnow-overall {
+  margin-top: 12px;
+  width: 100%;
+  font-size: min(24px, 1.2vw);
+  text-align: justify;
+  word-break: keep-all;
+}
+
+.movie-trailer-section .overview div .movie-trailer-watchnow-actions {
+  margin-top: min(24px, 1.2vw);
+  display: flex;
+  column-gap: 8px;
+}
+
+.movie-trailer-section
+  .overview
+  div
+  .movie-trailer-watchnow-actions
+  .movie-trailer-watchnow-button {
+  border-radius: 4px;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: var(--font-h2);
+  height: 3vw;
+}
+
+.movie-trailer-section
+  .overview
+  div
+  .movie-trailer-watchnow-actions
+  .movie-trailer-watchnow-button.play-button {
+  background-color: var(--button-primary-emphasize);
+  color: var(--text-secondary);
+}
+
+.movie-trailer-section
+  .overview
+  div
+  .movie-trailer-watchnow-actions
+  .movie-trailer-watchnow-button.play-button
+  .play-icon {
+  color: var(--text-secondary);
+  font-size: var(--font-h1);
+  margin-right: 16px;
+}
+
+.movie-trailer-section
+  .overview
+  div
+  .movie-trailer-watchnow-actions
+  .movie-trailer-watchnow-button.info-button {
+  background-color: var(--button-secondary);
+  color: var(--text-primary);
+}
+
+.movie-trailer-section
+  .overview
+  div
+  .movie-trailer-watchnow-actions
+  .movie-trailer-watchnow-button.info-button
+  .info-icon {
+  font-size: var(--font-h1);
+  margin-right: 12px;
+}
+
+.top-10.overlap {
+  margin-top: calc(0px - 10vw);
+}
+
+.carousel-title {
+  margin-left: 48px;
+  font-size: var(--font-h1);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+}
+
+.carousel {
+  position: relative;
+  height: 100%;
+}
+
+.carousel .carousel-control {
+  position: absolute;
+  height: inherit;
+  width: 48px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.carousel .carousel-control.carousel-control-prev {
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-origin: content-box;
+}
+
+.carousel .carousel-control.carousel-control-next {
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-origin: content-box;
+}
+
+.carousel:hover .carousel-control.carousel-control-prev {
+  background: url(/assets/chevron-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel:hover .carousel-control.carousel-control-next {
+  background: url(/assets/chevron-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel .carousel-slider {
+  width: 100%;
+  overflow-x: scroll;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.carousel .carousel-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .carousel-slider .carousel-content {
+  display: flex;
+}
+
+.top-10
+  .carousel
+  .carousel-slider
+  .carousel-content
+  .carousel-item
+  .top-10-item {
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.top-10
+  .carousel
+  .carousel-slider
+  .carousel-content
+  .carousel-item
+  .top-10-item
+  img {
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+.carousel .carousel-slider .carousel-content .carousel-item .media {
+  width: inherit;
+}
+
+.carousel .carousel-slider .carousel-content .carousel-item .media img {
+  width: 98%;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
+.section {
+  margin-top: 48px;
+}
