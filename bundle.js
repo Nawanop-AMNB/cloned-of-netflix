@@ -188,7 +188,6 @@ window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
     const headerSection = document.querySelector('.header-section');
     if (scrollTop) {
-        console.log('test');
         headerSection.classList.add('sticky');
     } else {
         headerSection.classList.remove('sticky');
